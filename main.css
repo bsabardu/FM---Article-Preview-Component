@@ -9,29 +9,54 @@ body {
     background-color: hsl(210, 46%, 95%);
 }
 
+.container {
+    max-width: 730px;
+}
+
 h2 {
-    font-size: 1.3rem;
-    line-height: 2rem;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
     color: hsl(217, 19%, 35%);
 }
 
 p {
-    line-height: 1.2rem;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 20px;
     color: hsl(214, 17%, 51%)
 }
 
 address {
     font-weight: 700;
+    line-height: 1rem;
+    margin-bottom: 0px;
 }
 
 time {
     color: hsl(212, 23%, 69%);
-    line-height: 0rem;
+    line-height: 1rem;
 }
 
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 13px;
+}
+
+.card {
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.12);
+    border-radius: 10px;
+}
+
+.card-img {
+    border-radius: 10px 0px 0px 10px;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.card-body {
+    padding:32px 40px;
+    height: 100%;
 }
 
 .main {
@@ -40,7 +65,7 @@ body {
 }
 
 .content {
-    width: 50%;
+    max-width: 730px;
     margin: auto;
 }
 
@@ -58,9 +83,8 @@ body {
     height: 32px;
 }
 
-.icon-container i {
-    width: 24px;
-    height: 24px;
+.icon-container i { 
+    font-size: 14px;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -74,4 +98,18 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Adapt Body Font Size regarding device */
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width:576px) and (max-width: 768px ) {
+}
+
+@media (max-width:575px) {
 }
