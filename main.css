@@ -91,6 +91,42 @@ body {
     color: hsl(214, 17%, 51%);
 }
 
+
+.share-box {
+    margin-top: -75px;
+    margin-left:-84px;
+    background-color: hsl(217, 19%, 35%);
+    color: #FFF;
+    border-radius: 8px;
+    padding: 16px 32px;
+}
+
+.share-box > * {
+    margin-right: 8px;
+    z-index: 1000;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.12);
+
+}
+
+.share-box > span {
+    letter-spacing: 2px;
+    color: hsl(212, 23%, 69%);
+}
+
+.share-box > i {
+    font-size: 16px;
+}
+
+.share-box::after {
+    content: "";
+    position: absolute;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-top: 12px solid hsl(217, 19%, 35%);
+    left : calc(50% - 8px);
+    top : 100%;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -102,7 +138,13 @@ body {
 
 /* Adapt Body Font Size regarding device */
 
-@media (min-width: 992px) {
+@media (max-width: 786px ) {
+
+    /* radius fix for mobile */
+    .card-img{
+    border-radius: 10px 10px 0px 0px;
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
