@@ -108,14 +108,11 @@ body {
 }
 
 .share {
+    cursor: pointer;
     position: absolute;
     z-index: 1;
     bottom: 36px;
     right:40px;
-}
-
-.share a {
-    text-decoration: none;
 }
 
 .share-box {
@@ -151,6 +148,7 @@ body {
 
 .share-box > i {
     font-size: 16px;
+    cursor: pointer;
 }
 
 .share-box::after {
