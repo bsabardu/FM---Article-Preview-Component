@@ -75,12 +75,30 @@ body {
     border-radius: 1000px;
 }
 
+
 .icon-container {
+    
     display: table;
     border-radius: 1000px;
     background-color: hsl(210, 46%, 95%);
     width: 32px;
     height: 32px;
+}
+
+.icon-container.active {
+    background-color: hsl(214, 17%, 51%);
+    color: hsl(210, 46%, 95%);
+
+}
+
+.icon-container:hover, .icon-container.active {
+    background-color: hsl(214, 17%, 51%);
+    color: hsl(210, 46%, 95%);
+
+}
+
+.icon-container i:hover, .icon-container.active i{
+    color: hsl(210, 46%, 95%);
 }
 
 .icon-container i { 
@@ -91,21 +109,38 @@ body {
     color: hsl(214, 17%, 51%);
 }
 
+.share {
+    position: absolute;
+    z-index: 1;
+    bottom: 36px;
+    right:40px;
+}
 
 .share-box {
+    position: absolute;
+    align-items: center;
+    display: none;
+    right: -64px;
+    bottom: 90px;
     margin-top: -75px;
     margin-left:-84px;
     background-color: hsl(217, 19%, 35%);
     color: #FFF;
     border-radius: 8px;
     padding: 16px 32px;
+    width: 248px;
 }
 
 .share-box > * {
     margin-right: 8px;
     z-index: 1000;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.12);
+    color: #FFF;
 
+}
+
+.share-box a:hover {
+    color: #FFF;
 }
 
 .share-box > span {
@@ -138,12 +173,50 @@ body {
 
 /* Adapt Body Font Size regarding device */
 
-@media (max-width: 786px ) {
+@media (max-width: 768px) {
 
     /* radius fix for mobile */
     .card-img{
     border-radius: 10px 10px 0px 0px;
 }
+
+
+.share-box {
+    position: absolute;
+    top:auto;
+    left: 0px;
+    bottom:0;
+    margin: 0;
+    align-items: center;
+    /* display: none; */
+    background-color: hsl(217, 19%, 35%);
+    color: #FFF;
+    border-radius: 0 0 8px 8px;
+    width: 100%;
+    height: 64px;
+    padding: 16px 32px;
+}
+
+.share-box > * {
+    margin-right: 8px;
+    z-index: 1;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.12);
+
+}
+
+.share-box > span {
+    letter-spacing: 2px;
+    color: hsl(212, 23%, 69%);
+}
+
+.share-box > i {
+    font-size: 16px;
+}
+
+.share-box::after {
+display: none;
+}
+
 
 }
 
