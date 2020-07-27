@@ -13,6 +13,10 @@ body {
     max-width: 730px;
 }
 
+a {
+    cursor: pointer;
+}
+
 h2 {
     font-weight: 700;
     font-size: 18px;
